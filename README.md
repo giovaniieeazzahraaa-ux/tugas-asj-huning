@@ -48,10 +48,22 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 apt update && apt upgrade
 ```
 Pasang web server Nginx
+```bash
 apt install nginx
+```
 Jalankan dan aktifkan otomatis saat boot:
+```bash
 systemctl start nginx
 systemctl enable nginx
+```
+Cek status:
+```bash
+systemctl status nginx
+```
+Jika statusnya active (running), berarti Nginx sudah berjalan.
+Buka browser dan akses: http://ip-server
+Jika muncul halaman “Welcome to Nginx!”, berarti server aktif. 🎉
+
 
 #### 2.2. Instalasi dan Konfigurasi Web Server 🌐
 
