@@ -43,13 +43,15 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 ### 2. 📝 Dokumentasi Teknis dan Langkah-Langkah Pengerjaan
 
-#### 2.1. Persiapan Dasar (Debian Trixie di VMware)
-
-1.  Melakukan *update* dan *upgrade* sistem.
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-2.  Memastikan konfigurasi jaringan (Bridge/NAT/Host-Only) sudah benar.
+#### Perbarui semua paket agar Debian siap digunakan
+```bash
+apt update && apt upgrade
+```
+Pasang web server Nginx
+apt install nginx
+Jalankan dan aktifkan otomatis saat boot:
+systemctl start nginx
+systemctl enable nginx
 
 #### 2.2. Instalasi dan Konfigurasi Web Server 🌐
 
