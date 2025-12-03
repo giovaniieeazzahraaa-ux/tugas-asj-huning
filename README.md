@@ -288,12 +288,8 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 | Aspek | Kelebihan ([NAMA WEB SERVER]) 👍 | Kekurangan ([NAMA WEB SERVER]) 👎 |
 | :--- | :--- | :--- |
 | **Performa & Kecepatan** | Mampu menangani banyak koneksi secara bersamaan (high concurrency) | Performanya bisa turun jika konfigurasi tidak optimal |
-| **Kemudahan Konfigurasi**| [• Konfigurasi cukup fleksibel dan mudah dipahami untuk kebutuhan umum.
-• Struktur file konfigurasi rapi dan terorganisasi.] | [• Untuk pemula, beberapa directive terasa membingungkan.
-• Jika terjadi error konfigurasi, pesan error kadang kurang informatif.] |
-| **Fitur & Modularitas** | [• Mendukung reverse proxy, load balancing, caching, dan keamanan yang kuat.
-• Stabil untuk website bertrafik tinggi.] | [• Modul tidak bisa dimuat secara dinamis (harus compile ulang jika ingin custom module).
-• Beberapa fitur advanced memerlukan pemahaman lebih dalam.] |
+| **Kemudahan Konfigurasi**| Konfigurasi cukup fleksibel dan mudah dipahami untuk kebutuhan umum | Untuk pemula, beberapa directive terasa membingungkan |
+| **Fitur & Modularitas** | Mendukung reverse proxy, load balancing, caching, dan keamanan yang kuat | Modul tidak bisa dimuat secara dinamis (harus compile ulang jika ingin custom module) |
 
 ---
 
