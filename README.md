@@ -287,9 +287,7 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 | Aspek | Kelebihan ([NAMA WEB SERVER]) 👍 | Kekurangan ([NAMA WEB SERVER]) 👎 |
 | :--- | :--- | :--- |
-| **Performa & Kecepatan** | [• Mampu menangani banyak koneksi secara bersamaan (high concurrency).
- Lebih cepat dan ringan dibanding banyak web server lain karena menggunakan arsitektur event-driven.]  [ Performanya bisa turun jika konfigurasi tidak optimal.
- Butuh setting tambahan untuk aplikasi yang sangat kompleks.] |
+| **Performa & Kecepatan** | Mampu menangani banyak koneksi secara bersamaan (high concurrency) | Performanya bisa turun jika konfigurasi tidak optimal |
 | **Kemudahan Konfigurasi**| [• Konfigurasi cukup fleksibel dan mudah dipahami untuk kebutuhan umum.
 • Struktur file konfigurasi rapi dan terorganisasi.] | [• Untuk pemula, beberapa directive terasa membingungkan.
 • Jika terjadi error konfigurasi, pesan error kadang kurang informatif.] |
