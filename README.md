@@ -15,8 +15,8 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | **Ketua Kelompok** | M. Albani Habib Busyron | XI TJKT 2 |
 | Anggota 1 | Giovanni Azzahra | XI TJKT 2 |
 | Anggota 2 | M. Albani Habib Busyron | XI TJKT 2 |
-| Anggota 1 | Riana Sri Agustiani | XI TJKT 2 |
-| Anggota 2 | Widi Hesti Melani | XI TJKT 2 |
+| Anggota 3 | Riana Sri Agustiani | XI TJKT 2 |
+| Anggota 4 | Widi Hesti Melani | XI TJKT 2 |
 | **Nama Sekolah/Institusi** | [Nama Sekolah/Institusi Kalian] | |
 
 #### 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
