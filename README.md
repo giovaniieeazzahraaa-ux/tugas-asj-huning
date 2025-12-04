@@ -318,4 +318,4 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 
 **Link Video YouTube:**
 
-[![Thumbnail Video](https://i.ytimg.com/vi/jhFOQtKPJRc/hqdefault.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-)
+[![Thumbnail Video](https://i.ytimg.com/vi/jhFOQtKPJRc/hqdefault.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
