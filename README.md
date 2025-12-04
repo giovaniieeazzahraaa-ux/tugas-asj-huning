@@ -318,6 +318,6 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 
 **Link Video YouTube:**
 
-[![Thumbnail Video Pengerjaan](https://img.youtube.com/vi/ID_VIDEO/maxresdefault.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
+[![Thumbnail Video Pengerjaan](https://img.youtu.com/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j/0.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
 
 **PETUNJUK:** Ganti semua teks di dalam tanda kurung siku `[ ... ]` dengan informasi proyek yang relevan.
