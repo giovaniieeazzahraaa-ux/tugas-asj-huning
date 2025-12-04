@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV Riana </title>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dbe9ff, #f0e6ff);
+    margin: 0;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cv-container {
+    background: #ffffff;
+    max-width: 750px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(125, 145, 245, 0.25);
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    border: 3px solid #b7c9ff;
+  }
+
+  /* Sidebar kiri */
+  .sidebar {
+    flex: 1 1 250px;
+    text-align: center;
+    border-right: 2px solid #d1d9ff;
+    padding-right: 30px;
+  }
+
+  .sidebar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #b7c9ff;
+    box-shadow: 0 0 15px rgba(183, 201, 255, 0.5);
+    margin-bottom: 20px;
+  }
+
+  .sidebar h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+    color: #3b4cca;
+  }
+
+  .sidebar h3 {
+    color: #6a6be6;
+    margin-top: -5px;
+    font-weight: 500;
+  }
+
+  .contact-info {
+    color: #4a4a7d;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .contact-info p {
+    margin: 10px 0;
+    font-weight: 500;
+  }
+
+  .contact-info strong {
+    color: #6a6be6;
+  }
+
+  /* Bagian kanan */
+  .main-content {
+    flex: 2 1 400px;
+  }
+
+  section {
+    margin-bottom: 35px;
+  }
+
+  section h2 {
+    color: #3b4cca;
+    border-bottom: 3px solid #a4b7ff;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  ul li {
+    background: #f1f5ff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(125, 145, 245, 0.2);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #30305a;
+    font-size: 1.05rem;
+  }
+
+  ul li span {
+    font-weight: 400;
+    max-width: 70%;
+    text-align: right;
+    color: #4c4c7a;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .skills div {
+    background-color: #a4b7ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px rgba(163, 182, 255, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .skills div:hover {
+    background-color: #6a6be6;
+    transform: translateY(-3px);
+  }
+
+  .summary {
+    background: #f1f5ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(125, 145, 245, 0.2);
+    line-height: 1.6;
+    color: #33335a;
+    font-size: 1rem;
+  }
+
+  /* Responsif */
+  @media (max-width: 768px) {
+    .cv-container {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+
+    .sidebar {
+      border-right: none;
+      border-bottom: 2px solid #d1d9ff;
+      padding-right: 0;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    ul li span {
+      text-align: left;
+      max-width: 100%;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="cv-container">
+
+  <!-- Sidebar kiri -->
+  <aside class="sidebar">
+    <img src="nana.jpeg" alt="Foto Riana Sri Agustiani" />
+    <h1>Riana Sri Agustiani</h1>
+    <h3>Pelajar SMKN 1 Soreang</h3>
+    <div class="contact-info">
+      <p><strong>Alamat:</strong><br />Kp. Tipar </p>
+      <p><strong>Telepon:</strong><br />0881-0231-21929</p>
+      <p><strong>Email:</strong><br />sriagustianiriana@gmail.com</p>
+    </div>
+  </aside>
+
+  <!-- Bagian utama -->
+  <main class="main-content">
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <div class="summary">
+        Saya adalah siswi yang bersemangat mempelajari dunia teknologi dan desain web.
+        Saya suka membuat tampilan website yang menarik dan berwarna lembut, serta
+        terus belajar untuk meningkatkan kemampuan coding saya ???.
+      </div>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <ul>
+        <li><strong>2021 - 2024</strong> <span>Mts-Atturmudzi</span></li>
+        <li><strong>2024 - 2027</strong> <span>SMKN 1 Soreang</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>PHP</div>
+        <div>MySQL</div>
+        <div>Canva</div>
+        <div>UI Design</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

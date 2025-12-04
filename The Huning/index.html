@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - THE Huning</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #0a192f 0%, #020c1b 100%);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      z-index: 2;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 20px #00ffff;
+      animation: glow 2s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aee1f9;
+      text-shadow: 0 0 8px #00eaff;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffff; }
+      to { text-shadow: 0 0 30px #00eaff, 0 0 50px #00ffff; }
+    }
+
+    #networkCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: radial-gradient(circle, #0a192f, #000);
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      width: 250px;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(6px);
+      transition: 0.4s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 35px rgba(0, 255, 255, 0.6);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      transition: 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: rotate(10deg) scale(1.1);
+      border-color: #ff00ff;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+      color: #00ffff;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #cce7f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #aee1f9;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="networkCanvas"></canvas>
+
+  <header>
+    <h1>The Huning</h1>
+    <p>Bersatu Menghubungkan Dunia dengan Teknologi</p>
+  </header>
+
+  <section style="text-align:center; padding: 0 25px; max-width: 900px; margin: 0 auto; color:#cce7f0; font-size:1.15rem; line-height:1.8; backdrop-filter: blur(4px);">
+  <p style="margin-bottom:18px;">
+    <strong style="color:#00ffff; font-size:1.3rem;">Wellcome to Huning office.</strong>
+  </p>
+  <p>
+    Kami bekerja di balik layar, di antara sinyal, data, dan koneksi tak terlihat.  
+    Di dunia jaringan, tidak ada yang berdiri sendiri _ semua saling tersambung, dan itu juga cara tim kami bergerak:  
+    terhubung, kompak, dan selalu mencari solusi.
+  </p>
+  <p>
+    <em>"Ini bukan sekadar tugas. Ini adalah proyek yang menyatukan teknologi dan imajinasi."</em>
+  </p>
+</section>
+
+
+  <section class="team">
+    <a href="/Giovani/gio.php" class="card">
+      <img src="Giovani.jpeg" alt="Giovani">
+      <h3>Giovanni Azzahra</h3>
+      <p>Editor Program</p>
+    </a>
+
+    <a href="/Riana/riana.html" class="card">
+      <img src="Rians.jpeg" alt="riana">
+      <h3>Riana Sri Agustiani</h3>
+      <p>Reseacher</p>
+    </a>
+
+    <a href="/Widi/widi.html" class="card">
+      <img src="Widi.jpeg" alt="Widi">
+      <h3>Widi Hesti Melani</h3>
+      <p>Dokumentation</p>
+    </a>
+
+    <a href="/Albani/bio/index.html" class="card">
+      <img src="Banzy.jpeg" alt="Albani">
+      <h3>M.Albani Habib Busyron</h3>
+      <p>Team Leader</p>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 huning | SMKN 1 Soreang 
+  </footer>
+
+  <script>
+    const canvas = document.getElementById("networkCanvas");
+    const ctx = canvas.getContext("2d");
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+    const dots = [], numDots = 100;
+
+    for (let i = 0; i < numDots; i++) {
+      dots.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5,
+        r: Math.random() * 2 + 1,
+        color: `hsl(${Math.random() * 360}, 100%, 50%)`
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+      dots.forEach(d => {
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+        ctx.fillStyle = d.color;
+        ctx.fill();
+      });
+      for (let i = 0; i < numDots; i++) {
+        for (let j = i + 1; j < numDots; j++) {
+          const dx = dots[i].x - dots[j].x;
+          const dy = dots[i].y - dots[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.strokeStyle = "rgba(0,255,255," + (1 - dist / 120) + ")";
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.moveTo(dots[i].x, dots[i].y);
+            ctx.lineTo(dots[j].x, dots[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      dots.forEach(d => {
+        d.x += d.vx;
+        d.y += d.vy;
+        if (d.x < 0 || d.x > width) d.vx *= -1;
+        if (d.y < 0 || d.y > height) d.vy *= -1;
+      });
+      requestAnimationFrame(draw);
+    }
+    draw();
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>
