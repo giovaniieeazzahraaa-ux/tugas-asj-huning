@@ -35,8 +35,8 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | **Alamat IP Server** | `192.168.1.7` |
 | **RAM VM** |  2 GB |
 | **vCPU** | 1 Core |
-| **Web Server yang Dipilih** | ** Nginx ** |
-| **Versi PHP yang Dipakai** | ** php-fpm ** |
+| **Web Server yang Dipilih** | Nginx |
+| **Versi PHP yang Dipakai** | php-fpm |
 
 ---
 
@@ -318,6 +318,6 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 
 **Link Video YouTube:**
 
-[![Thumbnail Video Pengerjaan](https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
+[![Thumbnail Video Pengerjaan](https://img.youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
 
 **PETUNJUK:** Ganti semua teks di dalam tanda kurung siku `[ ... ]` dengan informasi proyek yang relevan.
