@@ -318,6 +318,7 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 
 **Link Video YouTube:**
 
-[![Thumbnail Video Pengerjaan](https://img.youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j.jpg)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
+[![Thumbnail Video Pengerjaan](<img width="983" height="557" alt="image" src="https://github.com/user-attachments/assets/82e28dae-5da4-4f85-b6f2-53ca879f2bdc" />
+)](https://youtu.be/jhFOQtKPJRc?si=0tClDtF_yx4SGV-j)
 
 **PETUNJUK:** Ganti semua teks di dalam tanda kurung siku `[ ... ]` dengan informasi proyek yang relevan.
